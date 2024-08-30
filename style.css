@@ -3,20 +3,26 @@
 /* Default stles */
 * {
   margin: 0;
-  /* padding: 0; */
-  /* font-weight: 700;
+  padding: 0;
+  font-weight: 700;
   box-sizing: border-box;
-  font-family: "Space Grotesk", sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
   color: rgb(5, 0, 31);
 
-  animation: bgChange 55s ease-in-out infinite;
+  animation: bgChange 60s ease-in-out infinite;
 }
 
 h1 {
-  border: 1px solid black;
+  text-align: center;
+}
+
+.about {
 }
 
 img {
