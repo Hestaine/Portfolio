@@ -58,6 +58,8 @@ section {
   padding-bottom: 2rem;
   flex-direction: column;
   border-bottom: 2px solid rgb(49, 49, 49);
+
+  text-align: right;
 }
 
 .intro,
@@ -70,15 +72,12 @@ section {
   flex-direction: column-reverse;
 
   animation: enterRight 5s ease-in-out;
+
+  text-align: left;
 }
 
 .intro-left p {
   text-align: right;
-}
-
-.me {
-  width: 10rem;
-  border-radius: 10px 70px 70px 10px;
 }
 
 .intro img,
@@ -91,8 +90,13 @@ section {
   transition: all ease-in-out 5s;
 }
 
-.implement {
+.me {
   height: 13rem;
+  border-radius: 10px 70px 70px 10px;
+}
+
+.implement {
+  height: 17em;
 }
 
 .intro-left img,
@@ -144,7 +148,38 @@ i {
   color: rgb(214, 75, 59);
 }
 
-.about {
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .intro,
+  .dev,
+  .intro-left,
+  .dev-left {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .intro-left img {
+    width: 13rem;
+  }
+
+  .options {
+    height: 12rem;
+  }
+
+  .me {
+    width: 5rem;
+  }
+
+  .implement {
+    width: 18rem;
+  }
 }
 
 @keyframes bgChange {
