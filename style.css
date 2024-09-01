@@ -57,7 +57,7 @@ section {
   display: flex;
   padding-bottom: 2rem;
   flex-direction: column;
-  border-bottom: 2px solid rgb(49, 49, 49);
+  border-bottom: 2px solid rgb(85, 85, 85);
 
   text-align: right;
 }
