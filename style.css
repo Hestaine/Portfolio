@@ -25,8 +25,14 @@ main {
   flex-direction: column;
 }
 
+h1,
+h2,
+p {
+  animation: textIn 5s ease-in-out;
+}
+
 h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
   text-align: center;
   text-decoration: underline;
@@ -47,16 +53,23 @@ section {
 .dev,
 .intro-left,
 .dev-left {
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
   padding-bottom: 2rem;
   flex-direction: column;
   border-bottom: 2px solid rgb(49, 49, 49);
 }
 
+.intro,
+.dev {
+  animation: enterLeft 5s ease-in-out;
+}
+
 .intro-left,
 .dev-left {
   flex-direction: column-reverse;
+
+  animation: enterRight 5s ease-in-out;
 }
 
 .intro-left p {
@@ -74,6 +87,8 @@ section {
   justify-self: right;
   align-self: flex-end;
   border-radius: 70px 10px 10px 70px;
+
+  transition: all ease-in-out 5s;
 }
 
 .implement {
@@ -84,6 +99,8 @@ section {
 .dev-left img {
   width: 15rem;
   border-radius: 10px 70px 70px 10px;
+
+  transition: all ease-in-out 5s;
 }
 
 a {
@@ -181,5 +198,32 @@ i {
   }
   90% {
     background-color: whitesmoke;
+  }
+}
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+}
+@keyframes enterRight {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes enterLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(0);
   }
 }
